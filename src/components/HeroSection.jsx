@@ -16,6 +16,9 @@ const HeroSection = () => {
 						<p className='text-xl'>
 							LLorem ipsum dolor sit amet, consectetur adipiscing elit. Non lacus cursus ut nec non id aliquam nibh libero. Tortor quam pharetra neque.
 						</p>
+						<button className='bg-black text-white py-2 px-4 rounded-full mt-4 w-1/3'>
+							More
+						</button>
 					</div>
 
 					{/* right side */}
