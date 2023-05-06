@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Products from "./components/Products";
 import Register from "./components/Register";
+import Login from "./components/Login";
 
 // eslint-disable-next-line react/prop-types
 function MainLayout({ children }) {
@@ -24,6 +25,7 @@ function App() {
 					<Route path="/services" element={<MainLayout><Services /></MainLayout>} />
 					<Route path="/products" element={<MainLayout><Products /></MainLayout>} />
 					<Route path="/register" element={<Register />} />
+					<Route path="/login" element={<Login />} />
 					<Route path="/" element={<MainLayout><Services /></MainLayout>} />
 				</Routes>
 			</Router>
