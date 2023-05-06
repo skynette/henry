@@ -10,6 +10,7 @@ export default {
                 'primary': '#F1DFCD',
 				'background': '#F5F0EF',
 				'accent': '#CAB8A2',
+				'footer': '#E8E1D8',
             }
         },
     },
