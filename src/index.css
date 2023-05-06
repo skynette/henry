@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Goudy Old Style Regular";
+  src: local("Goudy Old Style Regular"),
+    url(./fonts/Goudy Old Style Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Book Antiqua";
+  src: local("Book Antiqua"),
+    url(./fonts/Book Antiqua Font.ttf) format("truetype");
+}
