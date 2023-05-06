@@ -1,3 +1,4 @@
+import googleImage from '../assets/google.png';
 
 function Register() {
 	return (
@@ -11,7 +12,7 @@ function Register() {
 			</div>
 
 			{/* Right section */}
-			<div className="md:w-1/2 bg-white flex justify-center m-auto items-center">
+			<div className="md:w-1/2 bg-registerBg flex flex-col justify-center m-auto items-center">
 				<form className="w-full max-w-md px-14">
 					<h2 className="text-3xl text-center text-gray-800 mb-8 py-6">Create Account</h2>
 					<div className="mb-4">
@@ -38,11 +39,15 @@ function Register() {
 							className="bg-transparent border-b border-black my-2 py-1 w-full focus:outline-none tracking-wide"
 						/>
 					</div>
-					<button className="mx-auto bg-black hover:bg-gray-700 text-white font-bold py-1 px-8 rounded focus:outline-none focus:shadow-outline mt-14 text-center" type="submit">
-						SIGN UP
-					</button>
-
 				</form>
+				<button className="bg-black hover:bg-gray-700 text-white font-bold py-1 px-8 rounded focus:outline-none focus:shadow-outline mt-14 text-center" type="submit">
+					SIGN UP
+				</button>
+				<button className="flex gap-1 my-14 py-1 px-4 rounded-sm font-bold bg-white border border-gray-200">
+					<img src={googleImage} alt="" />
+					Login with Google
+				</button>
+
 			</div>
 		</div>
 	);
