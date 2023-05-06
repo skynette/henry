@@ -4,7 +4,7 @@ function Register() {
 	return (
 		<div className="flex flex-col md:flex-row min-h-screen">
 			{/* Left section */}
-			<div className="register-left-section md:w-1/2 flex justify-center items-center">
+			<div className="register-left-section md:w-2/3 flex justify-center items-center">
 				<div className="text-center">
 					<h1 className="text-4xl font-bold text-gray-800 mb-4">Brand Name</h1>
 					<p className="text-lg text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
