@@ -46,7 +46,10 @@ function Footer() {
 				<div className="mt-8">
 					<p className="font-bold mb-4">Join our Community</p>
 					<p className="" >story@herbusinessmedia.com</p>
-					<input placeholder="Email Address" className="bg-transparent border-b border-black my-2 py-1 w-full"/>
+					<input
+						placeholder="Email Address"
+						className="bg-transparent border-b border-black my-2 py-1 w-full focus:outline-none"
+					/>
 					<button className="bg-black text-white px-6 py-2 w-full">
 						SIGN UP
 					</button>

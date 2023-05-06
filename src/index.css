@@ -23,3 +23,10 @@
 	font-family: "Book Antiqua";
 	src: url(../fonts/Book\ Antiqua\ Font.ttf);
 }
+
+.register-left-section {
+	background-image: url('./assets/register-bg.png');
+	background-size: cover;
+	background-position: center;
+  }
+  
