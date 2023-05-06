@@ -1,9 +1,49 @@
-
+import { useState } from 'react';
+import ServiceCard from './ServiceCard';
 
 const ServiceDetail = () => {
-  return (
-	<div>ServiceDetail</div>
-  )
-}
+	const [locationFilter, setLocationFilter] = useState('');
+	const [typeFilter, setTypeFilter] = useState('');
+	const [nameFilter, setNameFilter] = useState('');
 
-export default ServiceDetail
+	const handleLocationFilterChange = (event) => {
+		setLocationFilter(event.target.value);
+	};
+
+	const handleTypeFilterChange = (event) => {
+		setTypeFilter(event.target.value);
+	};
+
+	const handleNameFilterChange = (event) => {
+		setNameFilter(event.target.value);
+	};
+
+	return (
+		<div className="container mx-auto">
+			<div className="flex justify-between items-center my-4">
+				<div className="w-1/3">
+					<label htmlFor="locationFilter" className="block font-bold mb-2">Location:</label>
+					<input type="text" id="locationFilter" name="locationFilter" value={locationFilter} onChange={handleLocationFilterChange} className="w-full border border-gray-400 p-2 rounded" />
+				</div>
+				<div className="w-1/3">
+					<label htmlFor="typeFilter" className="block font-bold mb-2">Type:</label>
+					<input type="text" id="typeFilter" name="typeFilter" value={typeFilter} onChange={handleTypeFilterChange} className="w-full border border-gray-400 p-2 rounded" />
+				</div>
+				<div className="w-1/3">
+					<label htmlFor="nameFilter" className="block font-bold mb-2">Name:</label>
+					<input type="text" id="nameFilter" name="nameFilter" value={nameFilter} onChange={handleNameFilterChange} className="w-full border border-gray-400 p-2 rounded" />
+				</div>
+			</div>
+			<div className="flex flex-wrap -mx-4">
+				<ServiceCard />
+				<ServiceCard />
+				<ServiceCard />
+				<ServiceCard />
+				<ServiceCard />
+				<ServiceCard />
+			</div>
+		</div>
+	);
+};
+
+export default ServiceDetail;
