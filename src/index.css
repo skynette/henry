@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: "Goudy Old Style Regular";
   src: local("Goudy Old Style Regular"),
     url(./fonts/Goudy Old Style Regular.ttf) format("truetype");
@@ -12,4 +12,14 @@
   font-family: "Book Antiqua";
   src: local("Book Antiqua"),
     url(./fonts/Book Antiqua Font.ttf) format("truetype");
+} */
+
+@font-face {
+	font-family: "Goudy Old Style Regular";
+	src: url(../fonts/Goudy\ Old\ Style\ Regular.ttf);
+}
+
+@font-face {
+	font-family: "Book Antiqua";
+	src: url(../fonts/Book\ Antiqua\ Font.ttf);
 }
