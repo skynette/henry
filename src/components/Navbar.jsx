@@ -78,7 +78,7 @@ function Navbar() {
 
 					{/* menu toggle */}
 					{isTabletAbove && isMenuToggled && (
-						<div className="fixed right-0 bottom-0 z-40 h-full w-[300px] overflow-auto bg-primary drop-shadow-xl">
+						<div className="fixed right-0 bottom-0 z-40 h-full w-3/4 md:w-[300px] overflow-auto bg-primary drop-shadow-xl">
 							{/* CLOSE ICON */}
 							<div className="flex justify-end p-12">
 								<button onClick={() => setIsMenuToggled(!isMenuToggled)}>

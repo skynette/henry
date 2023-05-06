@@ -29,7 +29,7 @@ const HeroSection = () => {
 					<h1 className="text-[250px] font-[600] text-right text-accent mb-4 mr-4" >services</h1>
 				) :
 					(
-						<h1 className="text-[250px] font-[600] text-right text-7xl text-accent mb-4 mr-4" >services</h1>
+						<h1 className="text-right text-7xl text-accent mb-4 mr-4" >services</h1>
 					)
 				}
 
