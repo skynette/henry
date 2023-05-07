@@ -11,7 +11,7 @@ function Navbar() {
 	return (
 		<header className="w-full">
 			{/* top bar */}
-			<div className="flex justify-between items-center py-4 px-8 w-5/6 h-[92px] mx-auto">
+			<div className="flex justify-between items-center gap-4 md:gap-0 px-6 md:py-4 md:px-8 h-[92px] mx-auto">
 				{/* left side */}
 				<div className="flex gap-2">
 					<SocialIcon network="twitter" bgColor="#000000" style={{ height: 25, width: 25 }} />
@@ -100,8 +100,8 @@ function Navbar() {
 								<a href="#">BUSINESS</a>
 								<a href="#">COLLABORATION</a>
 								<a href="#">CONTACT</a>
-								<a href="#">LOGIN</a>
-								<a href="#">REGISTER</a>
+								<a href="/login">LOGIN</a>
+								<a href="/register">REGISTER</a>
 							</div>
 						</div>
 					)}

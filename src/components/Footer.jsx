@@ -2,7 +2,7 @@ import { SocialIcon } from "react-social-icons";
 
 function Footer() {
 	return (
-		<footer className="bg-footer mt-12 h-[60vh]">
+		<footer className="bg-footer mt-12 pb-10">
 			<div className="flex flex-col md:flex-row gap-4 justify-between items-start w-5/6 mx-auto pt-10">
 				{/* brandname n icons */}
 				<div className="mt-4">
