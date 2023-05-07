@@ -10,6 +10,7 @@ import healthImage from "../assets/health.png"
 import homeImage from "../assets/home.png"
 import kidsImage from "../assets/kids.png"
 import personalCareImage from "../assets/personal_care.png"
+import { useParams } from 'react-router-dom';
 
 const imageList = [
 	{ image: foodimage, title: "FOOD" },
@@ -27,6 +28,7 @@ const ServiceDetail = () => {
 	const [locationFilter, setLocationFilter] = useState('');
 	const [typeFilter, setTypeFilter] = useState('');
 	const [nameFilter, setNameFilter] = useState('');
+	const { service } = useParams()
 
 	const handleLocationFilterChange = (event) => {
 		setLocationFilter(event.target.value);
@@ -42,6 +44,9 @@ const ServiceDetail = () => {
 
 	return (
 		<div className="container mx-auto">
+			<div className="text-center my-6">
+				<h1 className='font-bold text-2xl'>Showing Results for {service}</h1>
+			</div>
 			<div className="flex justify-between items-center my-4 px-4 gap-2">
 				<div className="w-1/3">
 					<label htmlFor="locationFilter" className="block font-bold mb-2">Location:</label>
@@ -58,7 +63,7 @@ const ServiceDetail = () => {
 			</div>
 			<div className="flex flex-wrap mx-auto">
 				{imageList.map((imageObj) => (
-					<ServiceCard key={imageObj.name} name={imageObj.title} image={imageObj.image} />
+					<ServiceCard key={imageObj.name} />
 				))}
 			</div>
 		</div>

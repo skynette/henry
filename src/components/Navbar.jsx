@@ -68,10 +68,12 @@ function Navbar() {
 							</div>
 
 							<div className='flex justify-between items-center gap-2'>
-								<button className='bg-transparent border border-black rounded-full px-4 py-2'>
-									LOGIN
-								</button>
-								<a href="#" className='bg-black text-white rounded-full px-4 py-2'>SIGN UP</a>
+								<a href="/login">
+									<button className='bg-transparent border border-black rounded-full px-4 py-2'>
+										LOGIN
+									</button>
+								</a>
+								<a href="/register" className='bg-black text-white rounded-full px-4 py-2'>SIGN UP</a>
 							</div>
 						</>
 					)}

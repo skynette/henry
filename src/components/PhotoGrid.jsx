@@ -25,10 +25,12 @@ const PhotoGrid = () => {
 		<div className="grid md:grid-cols-3 gap-5 px-2">
 			{/* card */}
 			{imageList.map((image) => (
-				<div className="relative" key={image.title}>
-					<img src={image.image} alt="service image" className="w-full" />
-					<p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-1xl font-bold">{image.title}</p>
-				</div>
+				<a href={`/services/${image.title}`} key={image.title}>
+					<div className="relative">
+						<img src={image.image} alt="service image" className="w-full" />
+						<p className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-1xl font-bold">{image.title}</p>
+					</div>
+				</a>
 			))}
 
 		</div>
