@@ -13,6 +13,13 @@ const ServiceCard = () => {
 							<path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
 							<path fillRule="evenodd" clipRule="evenodd" d="M10 0a10 10 0 100 20 10 10 0 000-20zM1 10a9 9 0 1118 0 9 9 0 01-18 0z" />
 						</svg>
+						<p className="text-gray-700 text-sm">Number: </p>
+					</div>
+					<div className="flex items-center mb-2">
+						<svg className="w-4 h-4 fill-current text-gray-500 mr-2" viewBox="0 0 20 20">
+							<path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+							<path fillRule="evenodd" clipRule="evenodd" d="M10 0a10 10 0 100 20 10 10 0 000-20zM1 10a9 9 0 1118 0 9 9 0 01-18 0z" />
+						</svg>
 						<p className="text-gray-700 text-sm">Zipcode: </p>
 					</div>
 					<div className="flex items-center mb-2">
