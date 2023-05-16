@@ -83,6 +83,36 @@ const AddService = () => {
 								</div>
 							</div>
 
+							<div className="sm:col-span-4">
+								<label htmlFor="relationship" className="block text-sm font-medium leading-6 text-gray-900">
+									Relationship
+								</label>
+								<div className="mt-2">
+									<div className="relative">
+										<select
+											id="relationship"
+											name="relationship"
+											className="block appearance-none w-1/2 bg-transparent py-1.5 pl-2 pr-8 text-gray-900 border-0 border-b-2 border-gray-300 focus:outline-none focus:border-gray-700 sm:text-sm sm:leading-6"
+										>
+											<option value="customer">Customer</option>
+											<option value="supplier">Supplier</option>
+											<option value="partner">Partner</option>
+											<option value="other">Other</option>
+										</select>
+										<div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
+											<svg className="w-4 h-4 text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+												<path fillRule="evenodd" d="M10 12a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+												<path
+													fillRule="evenodd"
+													d="M10 3a7 7 0 100 14 7 7 0 000-14zM3 10a7 7 0 1114 0 7 7 0 01-14 0z"
+													clipRule="evenodd"
+												/>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+
 							<div className="col-span-full">
 								<label htmlFor="description" className="block text-sm font-medium leading-6 text-gray-900">
 									Description
@@ -91,8 +121,9 @@ const AddService = () => {
 									<textarea
 										id="description"
 										name="description"
+										cols={20}
 										rows={3}
-										className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+										className="block w-full md:w-1/2 rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:outline-none sm:text-sm sm:leading-6 px-4 py-2"
 										defaultValue={''}
 									/>
 								</div>
@@ -102,7 +133,7 @@ const AddService = () => {
 						</div>
 					</div>
 
-					
+
 				</div>
 
 				<div className="mt-6 flex items-center justify-end gap-x-6">
